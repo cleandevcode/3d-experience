@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Bronco Sport</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body ontouchstart="">
+    <div id="car-app">
+        <div id="progress-bar">
+            <div class="progress-content text-center">
+                <h2 class="h2 text-white mb-3">This is a 3D experience.</h2>
+                <p class="text-white mb-2 mb-4">
+                    <span class="d-lg-none">Drag around to explore</span>
+                    <span class="d-none d-lg-block">Use your mouse or trackpad to explore.</span>
+                </p>
+                <div class="d-none d-lg-flex align-items-center justify-content-center">
+                    <img class="img-fluids mx-2 mx-lg-4" src="images/icon-01.png">
+                    <img class="img-fluids mx-2 mx-lg-4" src="images/icon-02.png">
+                    <img class="img-fluids mx-2 mx-lg-4" src="images/icon-03.png">
+                </div>
+                <div class="d-flex d-lg-none align-items-center justify-content-center">
+                    <img class="img-fluids mx-2 mx-lg-4" src="images/360-icon.svg">
+                </div>
+            </div>
+            <div id="myBar"></div>
+        </div>
+        <div id="main-content">
+            <div id="car">
+                <a href="https://www.autotrader.ca/" class="button-back back-to-back back-to-home-page">
+                    <span class="circle" aria-hidden="true">
+                      <img class="img-fluid icon" src="images/left-chevron.svg">
+                    </span>
+                    <span class="button-text">BACK TO <b>HOME</b></span>
+                </a>
+                
+                <div class="nav-select-car dropdown">
+                    <a href="javascript:void(0)" class="change-background" type="button" id="dropdownChangeBG" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="3.5" width="25" height="18" rx="1.5" stroke="#3E3E3E"/>
+                            <path d="M1 18L5.87726 14.1957C6.5493 13.6716 7.47969 13.6308 8.19494 14.0943L10.588 15.645C11.4041 16.1739 12.4824 16.039 13.1431 15.3254L17.8471 10.2452C18.5121 9.5269 19.5993 9.39555 20.4163 9.93475L25 12.96" stroke="#3E3E3E" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12.1488" cy="8.2838" r="2.09459" fill="#3E3E3E"/>
+                            <rect x="2" width="22" height="1" rx="0.5" fill="#3E3E3E"/>
+                        </svg>                            
+                    </a>
+                    <a href="javascript:void(0)" id="download-pdf">
+                        <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 18.2941V22.5294H19.9412V18.2941" stroke="#3E3E3E" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.4712 1L10.4712 16.5294M10.4712 16.5294L13.8535 13.1471M10.4712 16.5294L7.08881 13.1471" stroke="#3E3E3E" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                    </a>
+                    <a href="javascript:void(0)" class="show-hide-item" data-name="reset-all">
+                        <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12C4 5.92487 8.92487 1 15 1C21.0751 1 26 5.92487 26 12C26 18.0751 21.0751 23 15 23C11.3565 23 8.12673 21.2286 6.12496 18.5" stroke="#3E3E3E" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.14645 8.64645C7.34171 8.45118 7.65829 8.45118 7.85355 8.64645C8.04882 8.84171 8.04882 9.15829 7.85355 9.35355L7.14645 8.64645ZM4 12.5L4.35355 12.8536C4.25106 12.956 4.10914 13.009 3.96456 12.9987C3.81997 12.9885 3.68697 12.916 3.6 12.8L4 12.5ZM0.6 8.8C0.434315 8.57909 0.479086 8.26569 0.7 8.1C0.920914 7.93431 1.23431 7.97909 1.4 8.2L0.6 8.8ZM7.85355 9.35355L4.35355 12.8536L3.64645 12.1464L7.14645 8.64645L7.85355 9.35355ZM3.6 12.8L0.6 8.8L1.4 8.2L4.4 12.2L3.6 12.8Z" fill="#3E3E3E"/>
+                        </svg>    
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownChangeBG">
+                        <a class="dd-item bg-beach" data-name="bg_beach" href="javascript:void(0)">
+                            <img class="img-fluid" src="images/bg_beach.jpg">
+                        </a>
+                        <a class="dd-item bg-mountain" data-name="bg_mountain" href="javascript:void(0)">
+                            <img class="img-fluid" src="images/bg_mountain.jpg">
+                        </a>
+                        <a class="dd-item bg-white" data-name="bg_white" href="javascript:void(0)">
+                            <img class="img-fluid" src="images/bg_white.jpg">
+                        </a>
+                    </div>
+                </div>
+                <h1>Ford <b>Bronco Sport Badland</b></h1>
+            </div>
+            <div class="info-car">
+                <img class="img-fluid" width="100px" src="images/neil@2x.png">
+                <p>Explore the <b>accesories for the 2021 Bronco Sport</b> in this 3D configurator guided by <b>Neil Vorano</b>, auto TRADER specialist and writer.</p>
+                <a href="javascript:void(0)" id="nav-menu" class="btn btn-accesories open-close-nav">SEE ACCESORIES</a>
+            </div>  
+        </div>  
+        
+        <div id="mySidenav" class="sidenav">
+            <div class="d-flex justify-content-between mb-2 mb-lg-3 header-nav">
+                <div>
+                    <span>Accesories for</span>
+                    <h4 class="h4">2021 Bronco Sport</h3>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="closebtn close-nav open-close-nav text-uppercase d-flex align-items-baseline font-weight-bold text-decoration-none" id="close-nav">close <span>X</span></a> 
+                </div>
+            </div>
+            <div class="items-details" id="menu-items-car-details"></div>
+            <div class="items" id="menu-items-car"></div>
+        </div>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script type="module" src="js/script.min.js"></script>
+</body>
+</html>
